@@ -2,11 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" link rel="stylesheet" href="style.css"> >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" ><link rel="stylesheet" href="style.css"> >
     <title>CoffeeZon Vote</title>
 </head>
 <body>
-    <h1>Vote for the cutest pet!</h1>
-    <h2>The winning pet's owner will get a ceffeinated prize!</h2>
+
+    </div>
+    <style>
+        body {
+    background-color: bisque;
+    background-image: url('background.png');
+}
+    </style>
+    <div id="logo"></div>
+    <script>
+        function getVote(int) {
+          var xmlhttp=new XMLHttpRequest();
+          xmlhttp.onreadystatechange=function() {
+            if (this.readyState==4 && this.status==200) {
+              document.getElementById("vote").innerHTML=this.responseText;
+            }
+          }
+          xmlhttp.open("GET","poll_vote.php?vote="+int,true);
+          xmlhttp.send();
+        }
+        </script>
+        </head>
+        <body>
+            <p> Vote for the cutest pet! The winning pet's owner will get a caffeinated prize!</p>
+        <div id="poll">
+        
+        <form>
+        Charshi: <input type="radio" name="vote" value="0" onclick="getVote(this.value)" img src=>
+        <img src="Charshi.jpeg"> <br>
+        Lola: <input type="radio" name="vote" value="1" onclick="getVote(this.value)"><br>
+        Guido: <input type="radio" name="vote" value="0" onclick="getVote(this.value)"><br>
+        Muff: <input type="radio" name="vote" value="1" onclick="getVote(this.value)"><br>
+        Shoto: <input type="radio" name="vote" value="0" onclick="getVote(this.value)"><br>
+        Zahara: <input type="radio" name="vote" value="1" onclick="getVote(this.value)"><br>
+        </form>
+        </div>
+        
+        </body>
+        </html>
+    
+    <h2></h2>
 </body>
 </html>
