@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Cat Voting</title>
+</head>
+<body>
+    
+        <style>
+          body {
+            background-color: bisque;
+          }
+
+          div {
+            font-size: larger;
+          }
+        </style>
+        <body>
+            <p> Vote for the cutest pet! The winning pet's owner will get a caffeinated prize!</p>
+        <div id="poll">
+            
+          <!-- <div>
+            <button type="button" onclick="window.location.href='\dogs.html'">Go To Dog Voting</button>
+          </div> -->
+            
+
+
+<div class="row">
+  <div class="column">
+    <img src="Charshi.jpeg" alt="Charshi" style="width:100%">Charshi
+  </div>
+  <div class="column">
+    <img src="Lola_photo.jpg" alt="Lola" style="width:100%">Lola
+  </div>
+  <div class="column">
+    <img src="Guido.jpg" alt="Guido" style="width:100%">Guido
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="Muff.jpeg" alt="Muff" style="width:100%">Muff
+  </div>
+  <div class="column">
+    <img src="Shoto.png" alt="Shoto" style="width:100%">Shoto
+  </div>
+  <div class="column">
+    <img src="Zahara.png" alt="Zahara" style="width:100%">Zahara
+  </div>
+</div>      
+    </div> 
+
+    <input type="text" id="myTextbox" value="Cat Name Here">
+            <button id="myButton">Vote!</button>
+
+            <script>
+              const button = document.getElementById("myButton");
+              const textbox = document.getElementById("myTextbox");
+            
+              button.addEventListener("click", function() {
+                console.log(textbox.value);
+              });
+            </script>
+
+    <div>
+            <button type="button" onclick="window.location.href='\dogs.html'">Go To Dog Voting</button>
+          </div>
+        </div>
+</body>
+
+</html>
