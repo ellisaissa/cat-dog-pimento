@@ -3,6 +3,11 @@ height: 700px;
     background: url('CZ\ Logo.jpg') no-repeat center center;
 }
 
+h1 {
+    color: black;
+    background-color: blanchedalmond;
+}
+
 p {
     height: 200px; 
     font-size: 75px;
